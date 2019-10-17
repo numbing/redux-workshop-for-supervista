@@ -37,3 +37,39 @@ import { combineReducers } from "redux";
 
 export default combineReducers({});
 </code></pre>
+
+### dataReducer.js
+
+<pre><code>
+const initalState = {
+  data: []
+};
+
+export const dataReducer = (state = initalState, action) => {
+  switch (action.type) {
+    case "GET_DATA":
+      return {
+        ...state,
+        data: action.payload
+      };
+    default:
+      return state;
+  }
+};
+
+</code></pre>
+
+### getData.js
+
+<pre><code>
+import axios from "axios";
+
+export const getData = () => dispatch => {
+  axios.get("https://swapi.co/api/people").then(res =>
+    dispatch({
+      type: "GET_DATA",
+      payload: res.data
+    })
+  );
+};
+</code></pre>
