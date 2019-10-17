@@ -29,3 +29,11 @@ export default store;
 
 
 </code></pre>
+
+### indexReducer.js
+
+<pre><code>
+import { combineReducers } from "redux";
+
+export default combineReducers({});
+</code></pre>
