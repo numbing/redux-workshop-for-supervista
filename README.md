@@ -1,3 +1,3 @@
 ## redux workshop for supervisa
 
-i going to have 2 workshop about redux-react and this is version one
+we going to build star wars and wrather app with react/redux
