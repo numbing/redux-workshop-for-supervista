@@ -4,6 +4,8 @@ we going to build star wars and wrather app with react/redux
 
 ================================================================
 
+### Store.js
+
 <pre><code>
 
 import { createStore, applyMiddleware, compose } from "redux";
