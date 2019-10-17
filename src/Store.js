@@ -1,11 +1,3 @@
-## redux workshop for supervisa
-
-we going to build star wars and wrather app with react/redux
-
-================================================================
-
-<pre><code>
-
 import { createStore, applyMiddleware, compose } from "redux";
 import thunk from "redux-thunk";
 import rootReducer from "./reducer/indexReducer";
@@ -23,7 +15,3 @@ const store = createStore(
 );
 
 export default store;
-
-
-
-</code></pre>
